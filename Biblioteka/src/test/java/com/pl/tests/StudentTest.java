@@ -13,7 +13,7 @@ import com.pl.biblioteka.Book;
 import com.pl.biblioteka.Student;
 
 
-public class CustomerTest {
+public class StudentTest {
 
 	List<Book> bookList = new ArrayList<Book>();
 	Student klient = new Student("imie", "nazwisko", bookList);
@@ -30,7 +30,7 @@ public class CustomerTest {
 	}
 
 	@Test
-	public void testCustomer() {
+	public void testStudent() {
 		assertTrue(klient.getName().equals("imie"));
 		assertTrue(klient.getSurname().equals("nazwisko"));
 		assertTrue(klient.getBookList().equals(bookList));
